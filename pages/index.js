@@ -6,14 +6,10 @@ import { useTranslations } from 'next-intl'
 
 import Blue2 from '../components/blue2'
 import Blue1 from '../components/blue1'
+import Header from '../components/Header'
 
 const Frame1196 = (props) => {
   const translate = useTranslations()
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
 
   return (
     <>
@@ -21,198 +17,7 @@ const Frame1196 = (props) => {
         <Head>
           <title>Ремонт стиральных машин в Одессе</title>
         </Head>
-        <header className="frame1196-container101">
-          <div className="frame1196-container102">
-            <div className="frame1196-container103">
-              <span className="frame1196-text100">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text__OMe1X'),
-                  }}
-                ></span>
-              </span>
-              <img
-                alt="image"
-                src="/bez%20ramk-200h.png"
-                className="frame1196-image10"
-              />
-            </div>
-          </div>
-          <div className="frame1196-container104">
-            <img
-              alt="image"
-              src="/ICONS/dla%20hedera%20trubka.svg"
-              className="frame1196-image11"
-            />
-            <div
-              className="frame1196-burger-menu"
-              onClick={toggleMenu}
-            >
-              <div className="frame1196-burger-line"></div>
-              <div className="frame1196-burger-line"></div>
-              <div className="frame1196-burger-line"></div>
-            </div>
-          </div>
-          <div className="frame1196-obshiy">
-            <div className="frame1196-korobki">
-              <div className="frame1196-container105">
-                <span className="frame1196-text101">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_4CyZ6E'),
-                    }}
-                  ></span>
-                </span>
-              </div>
-              <div className="frame1196-container106">
-                <span className="frame1196-text102">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_Mj52fk'),
-                    }}
-                  ></span>
-                </span>
-              </div>
-              <div className="frame1196-container107">
-                <span className="frame1196-text103">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_p-Mb2v'),
-                    }}
-                  ></span>
-                </span>
-              </div>
-            </div>
-            <div className="frame1196-telephonadres">
-              <div className="frame1196-container108">
-                <img
-                  alt="image"
-                  src="/ICONS/dla%20hedera%20trubka.svg"
-                  className="frame1196-image13"
-                />
-                <div className="frame1196-container109">
-                  <span className="frame1196-text104">
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: translate.raw('text_rHU5eg'),
-                      }}
-                    ></span>
-                  </span>
-                  <span className="frame1196-text105">
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: translate.raw('text_dfPjF9'),
-                      }}
-                    ></span>
-                  </span>
-                </div>
-              </div>
-              <div className="frame1196-container110">
-                <span className="frame1196-text106">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_lEhEem'),
-                    }}
-                  ></span>
-                </span>
-                <span className="frame1196-text107">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_7fEvzG'),
-                    }}
-                  ></span>
-                </span>
-              </div>
-              <svg
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-                height="110"
-                viewBox="0 0 20 110"
-                preserveAspectRatio="none"
-                className="frame1196-icon100"
-              >
-                <path
-                  d="M10 0 V110"
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="0.5"
-                  vectorEffect="non-scaling-stroke"
-                  strokeDasharray="11 11"
-                ></path>
-              </svg>
-              <svg
-                width="20"
-                xmlns="http://www.w3.org/2000/svg"
-                height="110"
-                viewBox="0 0 20 110"
-                preserveAspectRatio="none"
-                className="frame1196-icon102"
-              >
-                <path
-                  d="M10 0 V110"
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="0.5"
-                  vectorEffect="non-scaling-stroke"
-                  strokeDasharray="11 11"
-                ></path>
-              </svg>
-              <svg
-                width="330"
-                xmlns="http://www.w3.org/2000/svg"
-                height="20"
-                viewBox="0 0 330 20"
-                preserveAspectRatio="none"
-                className="frame1196-icon104"
-              >
-                <path
-                  d="M0 10 H330"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  strokeWidth="0.5"
-                  vectorEffect="non-scaling-stroke"
-                  strokeDasharray="11 11"
-                ></path>
-              </svg>
-              <svg
-                width="330"
-                xmlns="http://www.w3.org/2000/svg"
-                height="20"
-                viewBox="0 0 330 20"
-                preserveAspectRatio="none"
-                className="frame1196-icon106"
-              >
-                <path
-                  d="M0 10 H330"
-                  fill="none"
-                  stroke="#FFFFFF"
-                  strokeWidth="0.5"
-                  vectorEffect="non-scaling-stroke"
-                  strokeDasharray="11 11"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </header>
-
-        {/* Боковое меню */}
-        <div className={`frame1196-sidebar ${isMenuOpen ? 'frame1196-sidebar-open' : ''}`}>
-          <div className="frame1196-sidebar-overlay" onClick={toggleMenu}></div>
-          <div className="frame1196-sidebar-content">
-            <div className="frame1196-sidebar-header">
-              <button className="frame1196-sidebar-close" onClick={toggleMenu}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M18 6L6 18M6 6L18 18" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </button>
-            </div>
-            <nav className="frame1196-sidebar-nav">
-              <a href="#" className="frame1196-sidebar-link">ГЛАВНАЯ</a>
-              <a href="#" className="frame1196-sidebar-link">ВЫКУП Б/У МАШИН</a>
-              <a href="#" className="frame1196-sidebar-link">СТАТЬИ</a>
-            </nav>
-          </div>
-        </div>
+        <Header />
 
         <section className="frame1196-container111">
           <div className="frame1196-container112">
@@ -351,7 +156,7 @@ const Frame1196 = (props) => {
             </a>
             <a href="/2/ZAVISAET NA PROGRAMME.html" className="frame1196-container118">
               <h3 className="frame1196-text117">
-                Стиральная машина зависает на программе
+                Стиральная машина зависает на прогр��мме
               </h3>
               <div className="frame1196-arrow15">
                 <svg
@@ -391,7 +196,7 @@ const Frame1196 = (props) => {
                 </svg>
               </div>
               <img
-                alt="Стиральная машина не отжимает"
+                alt="Стиральная машина не отж��мает"
                 src="/problems 2/71-300h.webp"
                 loading="eager"
                 className="frame1196-image21"
@@ -445,7 +250,7 @@ const Frame1196 = (props) => {
                 className="frame1196-image23"
               />
             </a>
-            <a href="/4/NE KRUTIT BARABAN.html" className="frame1196-container122">
+            <a href="/nekrutitbaraban" className="frame1196-container122">
               <h3 className="frame1196-text121">
                 Стиральная машина не крутит барабан
               </h3>
@@ -482,11 +287,11 @@ const Frame1196 = (props) => {
             </span>
             <br className="frame1196-text127" />
             <span className="frame1196-text128">
-              Профессионально устраняем любые неисправности стиральных машин —
+              Профессионально устраняем любые неисправности сти����льных ма��ин —
               от самых простых до самых сложных.
             </span>
             <br className="frame1196-text129" />
-            <span className="frame1196-text130">Просто позвоните или</span>
+            <span className="frame1196-text130">Просто позвон��те или</span>
             <span className="frame1196-text131">оставьте заявку</span>
             <span className="frame1196-text132">, и мы вам перезвоним.</span>
           </p>
@@ -1833,7 +1638,7 @@ const Frame1196 = (props) => {
             <div className="frame1196-container152 track">
               <div className="item">
                 <img
-                  alt="Ремонт стиральных машин Ariston в Одессе - профессиональный сервис"
+                  alt="Ремонт стиральных машин Ariston в О��ессе - профессиональный сервис"
                   src="/brands/ariston-logo%201-200h.webp"
                   loading="eager"
                   className="frame1196-image32"
@@ -1913,7 +1718,7 @@ const Frame1196 = (props) => {
               </div>
               <div className="item">
                 <img
-                  alt="Ремонт стиральны�� машин Aeg в Одессе - профессиональный сервис"
+                  alt="Ремонт стиральны�� м��шин Aeg в Одессе - профессиональный сервис"
                   src="/brands/image%203823128-200h.webp"
                   loading="eager"
                   className="frame1196-image42"
@@ -3184,7 +2989,7 @@ to {transform: translateX(-2620px);}}
             <div className="frame1196-container185">
               <div className="frame1196-container186">
                 <figcaption className="frame1196-text229">
-                  Установка нового уплотнителя дверцы стиралки Zanussi
+                  Установка нового у��лотнителя дверцы стиралки Zanussi
                 </figcaption>
               </div>
             </div>
@@ -3233,7 +3038,7 @@ to {transform: translateX(-2620px);}}
             <div className="frame1196-container199">
               <div className="frame1196-container200">
                 <figcaption className="frame1196-text236">
-                  Восстановление управляющей платы на Siemens
+                  В��сстановление управляющей платы на Siemens
                 </figcaption>
               </div>
             </div>
@@ -3853,7 +3658,7 @@ to {transform: translateX(-2620px);}}
               className="frame1196-frame10701"
             />
             <p className="frame1196-text276">
-              Я долбоеб. я не могу жить без стиралки, потому что когда она
+              Я долбоеб. я не могу жить без стиралки, по��ому что когда она
               сломана я ��е могу плакать на взрыд во время отжима.
             </p>
             <svg
@@ -4006,7 +3811,7 @@ to {transform: translateX(-2620px);}}
             <p className="frame1196-text278">
               &quot;Я считаю это победа над стиральной машино��, которой 12
               лет))  Очень круто!! Благодарю!! Она пала в руки мастера и
-              отдалась ему полностью, а н�� стала брыкаться. не знаю, что он там
+              отдалась ему полностью, а н�� стала бры��аться. не знаю, что он там
               с ней делал, но сейчас она как шелковая стирает мой ситцевое
               кружевно�� белье&lt;3&quot;
             </p>
@@ -4370,7 +4175,7 @@ to {transform: translateX(-2620px);}}
               </div>
               <div className="frame1196-container237">
                 <iframe
-                  src="https://www.google.com/maps?q=пл. Независимости, 1, Одесса, Одесская область, 65000&amp;output=embed"
+                  src="https://www.google.com/maps?q=пл. Н��зависимости, 1, Одесса, Одесская область, 65000&amp;output=embed"
                   address="пл. Независимости, 1, Одесса, Одесская область, 65000"
                   className="frame1196-google-maps"
                 ></iframe>
@@ -4403,7 +4208,7 @@ to {transform: translateX(-2620px);}}
         </footer>
         <span className="frame1196-text291">
           <span className="frame1196-text292">&quot;Ваше название&quot;</span>
-          <span>: сервис по ремонту стиральных машин</span>
+          <span>: сервис по ремонту стир��льных ма��ин</span>
           <br />
           <span>© 2025</span>
         </span>
@@ -4428,223 +4233,6 @@ to {transform: translateX(-2620px);}}
             justify-content: center;
             background-color: #ffffff;
             background-image: url('/to%20the%20backgrouund-1500w.png');
-          }
-          .frame1196-container101 {
-            width: 100%;
-            height: auto;
-            display: flex;
-            min-width: 100%;
-            max-height: 120px;
-            min-height: 115px;
-            align-items: center;
-            padding-left: var(--dl-layout-space-threeunits);
-            padding-right: var(--dl-layout-space-threeunits);
-            justify-content: space-between;
-            background-color: #232020;
-          }
-          .frame1196-container102 {
-            gap: var(--dl-layout-space-twounits);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .frame1196-container103 {
-            gap: var(--dl-layout-space-unit);
-            flex: 0 0 auto;
-            width: 304px;
-            height: 91px;
-            display: flex;
-            position: relative;
-            align-items: center;
-            white-space: normal;
-            border-radius: var(--dl-layout-radius-radius4);
-            overflow-wrap: break-word;
-            flex-direction: row-reverse;
-            justify-content: center;
-          }
-          .frame1196-text100 {
-            color: rgb(255, 255, 255);
-            font-size: 23px;
-            word-wrap: break-word;
-            font-style: normal;
-            font-family: 'Noto Serif SC';
-            font-weight: 300;
-            white-space: normal;
-            letter-spacing: 1.5px;
-          }
-          .frame1196-image10 {
-            width: 77px;
-            height: 74px;
-            object-fit: cover;
-          }
-          .frame1196-container104 {
-            display: none;
-            align-items: center;
-            justify-content: space-between;
-          }
-          .frame1196-image11 {
-            width: 200px;
-            object-fit: cover;
-          }
-          .frame1196-image12 {
-            width: 200px;
-            object-fit: cover;
-          }
-          .frame1196-obshiy {
-            gap: var(--dl-layout-space-threeunits);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .frame1196-korobki {
-            gap: var(--dl-layout-space-oneandhalfunits);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .frame1196-container105 {
-            flex: 0 0 auto;
-            width: 183px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            justify-content: center;
-            background-color: #87ceeb;
-          }
-          .frame1196-text101 {
-            color: #ffffff;
-            font-size: 15px;
-            font-family: 'Roboto';
-          }
-          .frame1196-container106 {
-            flex: 0 0 auto;
-            width: 183px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            justify-content: center;
-            background-color: rgba(46, 51, 55, 0.41);
-          }
-          .frame1196-text102 {
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-family: 'Roboto';
-          }
-          .frame1196-container107 {
-            flex: 0 0 auto;
-            width: 183px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            border-radius: 8px;
-            justify-content: center;
-            background-color: rgba(46, 51, 55, 0.41);
-          }
-          .frame1196-text103 {
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-family: 'Roboto';
-          }
-          .frame1196-telephonadres {
-            gap: var(--dl-layout-space-oneandhalfunits);
-            flex: 0 0 auto;
-            width: 513px;
-            height: 75px;
-            display: flex;
-            position: relative;
-            align-items: center;
-            padding-left: var(--dl-layout-space-oneandhalfunits);
-            background-color: rgba(46, 51, 55, 0.41);
-          }
-          .frame1196-container108 {
-            gap: var(--dl-layout-space-unit);
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-          }
-          .frame1196-image13 {
-            width: 33px;
-            height: 32px;
-            align-self: center;
-            object-fit: cover;
-          }
-          .frame1196-container109 {
-            gap: var(--dl-layout-space-unit);
-            flex: 0 0 auto;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .frame1196-text104 {
-            fill: rgb(255, 255, 255);
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-style: normal;
-            font-family: 'Roboto';
-            font-weight: 400;
-            letter-spacing: 1.5px;
-          }
-          .frame1196-text105 {
-            fill: rgb(255, 255, 255);
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            font-style: normal;
-            font-family: 'Roboto';
-            font-weight: 400;
-            letter-spacing: 1.5px;
-          }
-          .frame1196-container110 {
-            gap: 12px;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .frame1196-text106 {
-            color: rgb(255, 255, 255);
-            font-size: 12px;
-            align-self: center;
-            font-family: 'Roboto';
-            font-weight: 300;
-            letter-spacing: 1.5px;
-          }
-          .frame1196-text107 {
-            fill: rgb(255, 255, 255);
-            color: rgb(255, 255, 255);
-            font-size: 12px;
-            font-family: 'Roboto';
-            font-weight: 300;
-            letter-spacing: 1.5px;
-          }
-          .frame1196-icon100 {
-            left: -9px;
-            width: 5px;
-            bottom: -1px;
-            height: 100%;
-            position: absolute;
-          }
-          .frame1196-icon102 {
-            top: -2px;
-            right: -8px;
-            width: 5px;
-            height: 100%;
-            position: absolute;
-          }
-          .frame1196-icon104 {
-            top: -10px;
-            left: -1px;
-            width: 100%;
-            height: 5px;
-            position: absolute;
-          }
-          .frame1196-icon106 {
-            left: 0px;
-            width: 100%;
-            bottom: -10px;
-            height: 5px;
-            position: absolute;
           }
           .frame1196-container111 {
             gap: var(--dl-layout-space-sixunits);
@@ -11825,110 +11413,6 @@ to {transform: translateX(-2620px);}}
             }
           }
 
-          /* Стили для бургер-меню */
-          .frame1196-burger-menu {
-            width: 35px;
-            height: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            cursor: pointer;
-            padding: 5px;
-          }
-
-          .frame1196-burger-line {
-            width: 100%;
-            height: 3px;
-            background-color: white;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-          }
-
-          /* Стили для боковой панели */
-          .frame1196-sidebar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100vh;
-            z-index: 1000;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-            opacity: 0;
-          }
-
-          .frame1196-sidebar-open {
-            pointer-events: all;
-            opacity: 1;
-          }
-
-          .frame1196-sidebar-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-          }
-
-          .frame1196-sidebar-content {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 300px;
-            height: 100%;
-            background-color: #232020;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-          }
-
-          .frame1196-sidebar-open .frame1196-sidebar-content {
-            transform: translateX(0);
-          }
-
-          .frame1196-sidebar-header {
-            padding: 20px;
-            display: flex;
-            justify-content: flex-end;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-          }
-
-          .frame1196-sidebar-close {
-            background: none;
-            border: none;
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-
-          .frame1196-sidebar-nav {
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-          }
-
-          .frame1196-sidebar-link {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-family: 'Roboto';
-            font-weight: 500;
-            padding: 15px 20px;
-            border-radius: 8px;
-            background-color: rgba(46, 51, 55, 0.41);
-            text-align: center;
-            transition: background-color 0.3s ease;
-          }
-
-          .frame1196-sidebar-link:hover {
-            background-color: #87ceeb;
-          }
 
           /* Стили для ссылок-карточек */
           .frame1196-container113,
